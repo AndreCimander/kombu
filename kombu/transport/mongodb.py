@@ -303,6 +303,7 @@ class Channel(virtual.Channel):
         database = mongoconn[dbname]
 
         version_str = mongoconn.server_info()['version']
+        version_str = version_str.split('-')[0]
         version = tuple(map(int, version_str.split('.')))
 
         if version < (1, 3):
@@ -341,7 +342,7 @@ class Channel(virtual.Channel):
                 [('expire_at', 1)], expireAfterSeconds=0)
 
     def _create_client(self):
-        """Actualy creates connection."""
+        """Actually creates connection."""
         database = self._open()
         self._create_broadcast(database)
         self._ensure_indexes(database)
