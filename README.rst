@@ -4,7 +4,7 @@
 
 |build-status| |coverage| |license| |wheel| |pyversion| |pyimp|
 
-:Version: 4.1.0
+:Version: 4.2.0
 :Web: http://kombu.me/
 :Download: https://pypi.python.org/pypi/kombu/
 :Source: https://github.com/celery/kombu/
@@ -308,9 +308,9 @@ Getting Help
 Mailing list
 ------------
 
-Join the `carrot-users`_ mailing list.
+Join the `celery-users`_ mailing list.
 
-.. _`carrot-users`: https://groups.google.com/group/carrot-users/
+.. _`celery-users`: https://groups.google.com/group/celery-users/
 
 Bug tracker
 ===========
